@@ -8,16 +8,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { CheckCircleIcon, XCircleIcon } from "lucide-react";
 import Link from "next/link";
 import { SVGProps } from "react";
 import { ColourModeToggle } from "./colour-mode-toggle";
-import {
-  CheckCircleIcon,
-  CheckIcon,
-  CrossIcon,
-  XCircle,
-  XCircleIcon,
-} from "lucide-react";
 
 export function FleetManagement() {
   return (
@@ -47,7 +41,7 @@ export function FleetManagement() {
         </aside>
         <main className="flex-1 p-6 bg-white dark:bg-black">
           <h1 className="text-4xl font-bold text-zinc-800 dark:text-zinc-100">
-            Fleet ID: DRN070623
+            Flight ID: DRN070623
           </h1>
           <Card className="mt-4">
             <CardHeader>
@@ -91,9 +85,7 @@ export function FleetManagement() {
                     <TableHead>
                       Ground traffic authority report and acknowledgment
                     </TableHead>
-                    <TableHead>
-                      Emergency Response ready
-                    </TableHead>
+                    <TableHead>Emergency Response ready</TableHead>
                     <TableHead>
                       On-site environments inspected and suitable for flight
                     </TableHead>
