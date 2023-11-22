@@ -11,6 +11,13 @@ import {
 import Link from "next/link";
 import { SVGProps } from "react";
 import { ColourModeToggle } from "./colour-mode-toggle";
+import {
+  CheckCircleIcon,
+  CheckIcon,
+  CrossIcon,
+  XCircle,
+  XCircleIcon,
+} from "lucide-react";
 
 export function FleetManagement() {
   return (
@@ -28,7 +35,7 @@ export function FleetManagement() {
         </nav>
       </header>
       <div className="flex flex-1">
-        <aside className="w-64 h-full bg-zinc-100/40 dark:bg-zinc-800/40 p-6">
+        <aside className="w-64 h-full bg-white dark:bg-zinc-800/40 p-6">
           <h1 className="mb-4 text-xl font-semibold text-black dark:text-white">
             Drone Fleet Management
           </h1>
@@ -40,7 +47,7 @@ export function FleetManagement() {
         </aside>
         <main className="flex-1 p-6 bg-white dark:bg-black">
           <h1 className="text-4xl font-bold text-zinc-800 dark:text-zinc-100">
-            Fleet 1 - ID: 12345
+            Fleet ID: DRN070623
           </h1>
           <Card className="mt-4">
             <CardHeader>
@@ -52,14 +59,17 @@ export function FleetManagement() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-zinc-800 dark:text-zinc-100">
-                Drone 1 (ID: 12345): Active
+              <p className="text-zinc-800 dark:text-zinc-100 pb-1">
+                Fleet 1 (ID: 12345):{" "}
+                <CheckCircleIcon className="text-green-600 inline" />
               </p>
-              <p className="text-zinc-800 dark:text-zinc-100">
-                Drone 2 (ID: 67890): Inactive
+              <p className="text-zinc-800 dark:text-zinc-100 pb-1">
+                Fleet 2 (ID: 67890):{" "}
+                <XCircleIcon className="text-red-600 inline" />
               </p>
-              <p className="text-zinc-800 dark:text-zinc-100">
-                Drone 3 (ID: 11223): Active
+              <p className="text-zinc-800 dark:text-zinc-100 pb-1">
+                Fleet 3 (ID: 11223):{" "}
+                <CheckCircleIcon className="text-green-600 inline" />
               </p>
             </CardContent>
           </Card>
@@ -82,17 +92,16 @@ export function FleetManagement() {
                       Ground traffic authority report and acknowledgment
                     </TableHead>
                     <TableHead>
-                      The public emergency response department is acknowledged
+                      Emergency Response ready
                     </TableHead>
                     <TableHead>
-                      On-site environments are inspected to be suitable by
-                      flight operation team
+                      On-site environments inspected and suitable for flight
                     </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell>Drone 1</TableCell>
+                    <TableCell>Fleet 1</TableCell>
                     <TableCell>
                       <Checkbox
                         id="drone1-cat1"
@@ -119,7 +128,7 @@ export function FleetManagement() {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell>Drone 2</TableCell>
+                    <TableCell>Fleet 2</TableCell>
                     <TableCell>
                       <Checkbox
                         id="drone2-cat1"
@@ -146,7 +155,7 @@ export function FleetManagement() {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell>Drone 3</TableCell>
+                    <TableCell>Fleet 3</TableCell>
                     <TableCell>
                       <Checkbox
                         id="drone3-cat1"
