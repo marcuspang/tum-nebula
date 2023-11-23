@@ -34,7 +34,7 @@ export function FleetManagement() {
             Drone Fleet Management
           </h1>
           <nav className="flex flex-col gap-2 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-            <Link href="#drone-status">Drone Status</Link>
+            <Link href="#fleet-status">Fleet Status</Link>
             <Link href="#flight-approval">Flight Approval</Link>
             <Link href="#flight-logs">Flight Logs</Link>
           </nav>
@@ -46,10 +46,10 @@ export function FleetManagement() {
           <Card className="mt-4">
             <CardHeader>
               <CardTitle
-                id="drone-status"
+                id="fleet-status"
                 className="text-zinc-800 dark:text-zinc-100"
               >
-                Drone Status
+                Fleet Status
               </CardTitle>
             </CardHeader>
             <CardContent>
