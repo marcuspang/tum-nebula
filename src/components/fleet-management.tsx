@@ -80,7 +80,7 @@ export function FleetManagement() {
               <Table className="text-zinc-800 dark:text-zinc-100">
                 <TableHeader>
                   <TableRow>
-                    <TableHead>Drone</TableHead>
+                    <TableHead className="w-[200px]">Drone</TableHead>
                     <TableHead>ATC report and acknowledgment</TableHead>
                     <TableHead>
                       Ground traffic authority report and acknowledgment
@@ -187,14 +187,14 @@ export function FleetManagement() {
               </CardTitle>
             </CardHeader>
             <CardContent className="bg-black text-green-400 font-mono p-4">
-              <p>[2023-11-22 10:00:00] Drone 1: Take off</p>
-              <p>[2023-11-22 10:15:00] Drone 1: Reached waypoint 1</p>
-              <p>[2023-11-22 10:30:00] Drone 1: Reached waypoint 2</p>
-              <p>[2023-11-22 10:45:00] Drone 1: Landing</p>
-              <p>[2023-11-22 11:00:00] Drone 2: Take off</p>
-              <p>[2023-11-22 11:15:00] Drone 2: Reached waypoint 1</p>
-              <p>[2023-11-22 11:30:00] Drone 2: Reached waypoint 2</p>
-              <p>[2023-11-22 11:45:00] Drone 2: Landing</p>
+              <p>[2023-11-22 10:00:00] Fleet 1: Take off</p>
+              <p>[2023-11-22 10:15:00] Fleet 1: Reached waypoint 1</p>
+              <p>[2023-11-22 10:30:00] Fleet 1: Reached waypoint 2</p>
+              <p>[2023-11-22 10:45:00] Fleet 1: Landing</p>
+              <p>[2023-11-22 11:00:00] Fleet 3: Take off</p>
+              <p>[2023-11-22 11:15:00] Fleet 3: Reached waypoint 1</p>
+              <p>[2023-11-22 11:30:00] Fleet 3: Reached waypoint 2</p>
+              <p>[2023-11-22 11:45:00] Fleet 3: Landing</p>
             </CardContent>
           </Card>
         </main>
